@@ -91,7 +91,9 @@ margin: 10px 0px;
     height:700px;
 }
 .btn{
-    background-color:rgb(248, 164, 9);
+    background-color:black;
+    width:30%;
+    color:white;
 }
 .container {
     padding-top:10px;
@@ -123,19 +125,40 @@ margin: 10px 0px;
         width: 25%;
         height: 10%;
         background-color: black;
-        padding-bottom:15px;
+        display:flex;
+        align-items:center;
         
     }
 h1{
     font-size:10px;
     color:white;
 }
-   
+nav .left a{
+    font-size:20px;
+    float:left;
+    text-transform:uppercase;
+    color:rgba(0, 0, 0, 0.58);
+}
+.main{
+width:100%;
+height:60%;
+}
+.main2{
+    background-color:black;
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
        </style>
 </head>
 <body>
-   
+
     <nav>
+        <div class="left">
+            <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
+        </div>
         <ul>
             <li><a href="Projects.html">Projects</a></li>
             <li><a href="About.html">About</a></li>
@@ -147,7 +170,7 @@ h1{
     <div class="content-items">
         <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
     </div>
-    <h2>Projects</h2>
+    <h2 style="margin-top:10px,font-size:10px;">Projects</h2>
 
     <div class="container">
         <div class="box1"><img src="https://www.w3schools.com/w3images/house5.jpg" alt="" style="width: 100%;">
@@ -245,8 +268,8 @@ h1{
         <h1>Contact</h1>
         <br>
         <br>
-        <h3>Let's get in touch and talk about your next project</h3>
-        <form>
+        <h3 style="margin-left:10px;">Let's get in touch and talk about your next project</h3>
+        <form style="margin-left:10px;">
             <div class="name">
             <input type="text"placeholder="Name">
             </div>
@@ -263,6 +286,11 @@ h1{
 <button class="btn">Send Message</button>
         </form>
     </div>
-    
+    <div class="main">
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+    </div>
+    <footer class="main2">
+        <h1 style="font-size:10px;">Powered by w3.css</h1>
+    </footer>
 </body>
 </html>
